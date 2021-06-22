@@ -36,3 +36,15 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+
+### 파이썬 시각화 
+- ~~
+
+```python
+sns.displot(x = 'LotArea', data = train, kde = True)
+skewness=str(train["LotArea"].skew())
+kurtosis=str(train["LotArea"].kurt())
+plt.legend([skewness,kurtosis],title=("skewness and kurtosis"))
+plt.title("Before applying transform technique")
+plt.show()
+```
